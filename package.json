@@ -10,7 +10,7 @@
     "build": "cd react-mernstack-crud && npm run build",
     "heroku-postbuild": "npm run install-react-mernstack-crud && npm run build",
     "start": "cd backend && node server.js",
-    "react-mernstack-crud": "cd react-mernstack-crud && npm start",
+    "client": "cd react-mernstack-crud && npm start",
     "normal": "concurrently -n 'server,react-mernstack-crud' -c 'red,green' \"node server.js\" \"npm run react-mernstack-crud\"",
     "dev": "concurrently -n 'server,react-mernstack-crud' -c 'red,green' \"nodemon server.js\" \"npm run react-mernstack-crud\""
   },
