@@ -45,7 +45,9 @@ if(process.env.NODE_ENV === 'production'){
 
 // 404 Error
 app.use((req, res, next) => {
-  next(createError(404));
+  res.status(404).json({
+    msg: "Not found"
+  });
 });
 
 app.use(function (err, req, res, next) {
