@@ -8,7 +8,7 @@
     "preinstall": "cd backend && npm install",
     "postinstall": "cd react-mernstack-crud && npm install",
     "build": "cd react-mernstack-crud && npm run build",
-    "heroku-postbuild": "npm run install-react-mernstack-crud && npm install && npm run build",
+    "heroku-postbuild": "npm run install-react-mernstack-crud && npm run build",
     "start": "cd backend && node server.js",
     "react-mernstack-crud": "cd react-mernstack-crud && npm start",
     "normal": "concurrently -n 'server,react-mernstack-crud' -c 'red,green' \"node server.js\" \"npm run react-mernstack-crud\"",
