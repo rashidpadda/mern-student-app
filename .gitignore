@@ -1,6 +1,7 @@
 node_modules
 backend/node_modules
 react-mernstack-crud/node_modules
+.idea
 
 react-mernstack-crud/.pnp
 react-mernstack-crud/.pnp.js

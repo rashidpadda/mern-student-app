@@ -5,20 +5,22 @@
   "main": "./backend/server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "preinstall": "cd backend && npm install",
+    "postinstall": "cd react-mernstack-crud && npm install",
     "build": "cd react-mernstack-crud && npm run build",
-    "install-client": "cd react-mernstack-crud && npm install",
-    "heroku-postbuild": "npm run install-react-mernstack-crud && npm run build",
-    "start":"cd backend && node server.js",
+    "heroku-postbuild": "npm run install-react-mernstack-crud && npm install && npm run build",
+    "start": "cd backend && node server.js",
     "react-mernstack-crud": "cd react-mernstack-crud && npm start",
     "normal": "concurrently -n 'server,react-mernstack-crud' -c 'red,green' \"node server.js\" \"npm run react-mernstack-crud\"",
     "dev": "concurrently -n 'server,react-mernstack-crud' -c 'red,green' \"nodemon server.js\" \"npm run react-mernstack-crud\""
-   
-    
-    
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "create-react-app": "^3.4.1"
+  },
+  "engines": {
+    "node": "12.x",
+    "npm": "6.x"
   }
 }
