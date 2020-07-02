@@ -10,7 +10,8 @@ const studentRoute = require('../backend/routes/student.route')
 // Connecting mongoDB Database
 mongoose.Promise = global.Promise;
 mongoose.connect(dbConfig.db, {
-  useNewUrlParser: true
+  useNewUrlParser: true,
+  useUnifiedTopology: true
 }).then(() => {
   console.log('Database sucessfully connected!')
 },
@@ -31,7 +32,7 @@ app.use('/students', studentRoute)
 // PORT
 const port = process.env.SERVER_PORT || 4000;
 const server = app.listen(port, () => {
-  console.log('Connected to port ' + port)
+  console.log('Server started at port ' + port)
 })
 
 // Heroku step 3
