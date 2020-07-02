@@ -39,7 +39,7 @@ const server = app.listen(port, () => {
 
 if(process.env.NODE_ENV === 'production'){
   // app.use(express.static('/react-mernstack-crud/build'));
-  app.use(express.static('react-mernstack-crud/build'))
+  app.use(express.static('../react-mernstack-crud/build'))
   // D:\MERN-PROJECTS\mern-student-app\react-mernstack-crud\build
 }
 
