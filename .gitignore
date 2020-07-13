@@ -22,21 +22,4 @@ react-mernstack-crud/.env.production.local
 react-mernstack-crud/npm-debug.log*
 react-mernstack-crud/yarn-debug.log*
 react-mernstack-crud/yarn-error.log*/.pnp
-react-mernstack-crud/.pnp.js
-
-# testing
-react-mernstack-crud/coverage
-
-# production
-react-mernstack-crud/build
-
-# misc
-react-mernstack-crud/.DS_Store
-react-mernstack-crud/.env.local
-react-mernstack-crud/.env.development.local
-react-mernstack-crud/.env.test.local
-react-mernstack-crud/.env.production.local
-
-react-mernstack-crud/npm-debug.log*
-react-mernstack-crud/yarn-debug.log*
 react-mernstack-crud/yarn-error.log*
